@@ -20,7 +20,7 @@ body {
 
 .ib-sidenav {
     width: 30%;
-    height: calc(100vh - 60px);
+    min-height: 100vh;
     background-color: #0058A0;
 }
 
