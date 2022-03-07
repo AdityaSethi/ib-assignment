@@ -21,16 +21,16 @@ body {
 }
 
 .ib-sidenav {
-    width: 30%;
+    width: 25%;
     min-height: 100vh;
     background-color: $blueColor;
 }
 
 .ib-selected-content {
-    width: 70%;
+    width: 75%;
     height: 100%;
     overflow-y: auto;
-    background-color: #e5e5e5;
+    background-color: $bgGrey;
 }
 
 .sub-content {
