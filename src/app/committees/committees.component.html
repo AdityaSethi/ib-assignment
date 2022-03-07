@@ -1,0 +1,35 @@
+<section>
+    <h1>Select Committees</h1>
+    <p class="description">Search the committes you want apply for membership or select from below list.</p>    
+</section>
+<section>
+    <div class="subheader-section"></div>
+    <div class="search">
+        <select name="type" id="selector" class="search-select">
+            <option value="">Search by committee</option>
+        </select>
+        <input type="text" class="search-box" placeholder="Type here" />
+    </div>
+    <div class="info-text-c">
+        <a class="info-text" href="">Cant find the committe standard</a>
+    </div>
+</section>
+<section>    
+    <div class="selected-committes">
+        <h2 class="description">{{ selectedCommittees.length }} COMMITTEES SELECTED</h2>
+        <ul class="selected-committes-list">
+            <li *ngFor="let committee of selectedCommittees">
+                <h3>{{ committee.heading }}</h3>
+            </li>
+        </ul>
+    </div>
+</section>
+<section>
+    <ul class="committees">
+        <li *ngFor="let committee of committees" [ngClass]="{'selected': hasCommittee(committee)}">
+            <input type="checkbox" (change)="onCheckCommittee(committee)" [checked]="hasCommittee(committee)">
+            <h2>{{ committee.heading }}</h2>
+            <h3 class="description">{{ committee.description }} </h3>
+        </li>
+    </ul>
+</section>

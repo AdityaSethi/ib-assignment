@@ -1,0 +1,25 @@
+.nav-item-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    li {
+        list-style: none;
+        line-height: 30px;
+        a {
+            text-decoration: none;
+            color: white;
+            opacity: 0.5;
+        }
+        a.active {
+            opacity: 1;
+        }
+    }
+}
+

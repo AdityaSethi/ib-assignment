@@ -1,0 +1,17 @@
+<app-ib-header class="ib-header"></app-ib-header>
+<div class="main-container">  
+  <app-ib-sidenav class="ib-sidenav"></app-ib-sidenav>
+  <div>
+    <select class="search-select mb-nav"  [(ngModel)]="selectedRoute" (change)="navigateTo()">
+      <option value="/personalInformation">Personal Information</option>
+      <option value="/committees">Committee(s)</option>
+      <option value="/profileInformation">Profile Information</option>
+      <option value="/termsAndAgreement">Terms & Agreement</option>
+    </select>
+  </div>  
+  <div class="ib-selected-content">
+    <div class="sub-content">
+      <router-outlet></router-outlet>
+    </div>    
+  </div>
+</div>

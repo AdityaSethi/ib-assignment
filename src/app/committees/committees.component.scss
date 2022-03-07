@@ -1,0 +1,68 @@
+ul.committees {
+    padding: 0px;
+    margin: 0px;
+    li {
+        list-style: none;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+        padding: 20px 10px;
+        margin:15px 0px;
+        background-color: #ffffff;
+        input {
+            float: right;
+        }
+    }
+}
+
+.description {
+    color: #7c7c7c;
+}
+
+.selected-committes{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+    padding: 5px 10px;
+}
+
+ul.selected-committes-list {
+    margin: 0px;
+    padding: 0px;
+    li {
+        list-style: none;
+        border-bottom: 1px solid #7c7c7c;
+    }
+}
+
+.search {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+}
+
+.search-box {
+    width: 60%;
+    height: 50px;
+    color: #939393;
+    border: 0px;
+    padding: 0px 10px;   
+}
+
+.info-text-c {
+    height: 40px;
+}
+
+.info-text {
+    float:right;
+    color: #00A5D8;
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+.selected{
+    border: 2px solid #00A5D8;
+}
+
+@media only screen and (max-width: 480px) {
+    .info-text{
+        float: right
+    }
+}
