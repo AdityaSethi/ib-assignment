@@ -1,3 +1,5 @@
+@import "./../variables";
+
 * {
     margin: 0px;
     padding: 0px;
@@ -21,7 +23,7 @@ body {
 .ib-sidenav {
     width: 30%;
     min-height: 100vh;
-    background-color: #0058A0;
+    background-color: $blueColor;
 }
 
 .ib-selected-content {
@@ -45,19 +47,19 @@ body {
         display: block;
         width: calc(100% - 20px);
         padding: 10px 10px 0px 10px;
-        background-color: #e5e5e5;
+        background-color: $bgGrey;
     }
     .search-select {
-        width: calc(100% - 0px);
+        width: 100%;
     }
     .ib-sidenav {
         display: none;
     }
     .ib-selected-content{
-        width: calc(100% - 0px);
+        width: 100%;
     }
     .sub-content {
-        width: calc(100% - 0px);
+        width: 100%;
     }
     .mb-nav {
         display: block;

@@ -1,27 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./variables";
+
 body {
     margin: 0px;
 }
 
 h1 {
-    font-size: 28px;
+    font-size: $fong-lg;
     font-weight: normal;
 }
 
 h2 {
-    font-size: 20px;
-    font-weight: normal !important;
+    font-size: $font-md;
+    font-weight: normal;
 }
 
 h3 {
-    font-size: 16x;
+    font-size: $font-sm;
     font-weight: normal;
 }
 
 .search-select {
     width: 40%;
     height: 50px;
-    background-color: #00A5D8;
-    color: #ffffff;
+    background-color: $blueColor;
+    color: $white;
     text-align: center;
 }
